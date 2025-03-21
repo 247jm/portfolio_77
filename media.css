@@ -128,6 +128,7 @@
   .header {
     align-items: end;
     height: 70px;
+    margin-top: 20px;
   }
   .header a {
     font-size: 14px;
@@ -136,14 +137,17 @@
     width: 155px;
   }
   .header .header_right a {
-    margin-right: 40px;
+    margin-right: 20px;
   }
   .fontsize18 {
     margin: 5px 0;
     font-size: 14px;
   }
   .header-profile p {
-    font-size: 11px;
+    font-size: 9px;
+  }
+  .header_right {
+    margin-left: 5px;
   }
   .pagetop {
     right: 24px;
@@ -292,5 +296,23 @@
   }
   .skil_sp {
     display: block;
+  }
+  .nav-title-box {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .nav-title-skil {
+    width: 350px;
+    padding: 80px 0 0 0;
+  }
+  .banner-box {
+    margin: 200px 0 0 0;
+  }
+  .banner-header .maologo {
+    width: 100px;
+  }
+  .banner-header .header_right a {
+    margin-right: 15px;
+    padding-left: 5px;
   }
 }/*# sourceMappingURL=media.css.map */
