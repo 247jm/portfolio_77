@@ -21,6 +21,35 @@
 
 	<div class="container">
 
+    <div class="burgermenu">
+		  <button class="burger" id="burger">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+		  </button>
+		  <nav class="menu" id="menu">
+			  <div class="header_right">
+          <a href="index.html#home" class="home"><img class="maologo" src="sozai/maotaniguchi_enpitsulogo.png" alt=""></a>
+				  <a href="index.html#profile" class="header-profile"><p>ABOUT</p></a>
+				  <a href="index.html#skill" class="header-profile"><p>SKILL</p></a>
+				  <a href="index.html#works" class="header-profile"><p>WORKS</p></a>
+				  <a href="index.html#contact" class="header-profile"><p>CONTACT</p></a>
+			   </div>
+		  </nav>
+
+		  <script>
+			  const burger = document.querySelector('#burger');
+			  const menu = document.querySelector('#menu');
+
+			  if(burger){
+				  burger.addEventListener('click', () => {
+					  burger.classList.toggle('is-active')
+					  menu.classList.toggle('is-active')
+				  })
+			  }
+		  </script>
+    </div>
+
     <div class="fixed-area">
 			<div class="header-box">
 			 <div class="banner-header">
