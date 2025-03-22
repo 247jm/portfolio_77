@@ -1,6 +1,14 @@
+@media (min-width: 1099px) {
+  .burgermenu {
+    display: none;
+  }
+}
 @media (max-width: 1100px) and (min-width: 799px) {
   .container, .header-box {
     width: 72.7272727273vw;
+  }
+  .burgermenu {
+    display: none;
   }
   .header {
     align-items: center;
@@ -23,6 +31,7 @@
   }
   .banner-box {
     margin-bottom: 75px;
+    margin-top: -400px;
   }
   .logoimg-list, .banner-list {
     -moz-column-gap: 2.2727272727vw;
@@ -114,8 +123,50 @@
   .skill-detail img {
     width: 13.6363636364vw;
   }
-  .skil_sp {
+  .skil_sp, .skil_tab, .skil_tab_02 {
     display: none;
+  }
+}
+@media (max-width: 800px) and (min-width: 690px) {
+  .skil_sp, .skil_pc, .skil_tab_02 {
+    display: none;
+  }
+  .skil_tab {
+    display: block;
+  }
+}
+@media (max-width: 691px) and (min-width: 523px) {
+  .skil_sp, .skil_pc, .skil_tab {
+    display: none;
+  }
+  .skil_tab_02 {
+    display: block;
+  }
+  .skill-all {
+    width: 100%;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+    margin-top: 10vw;
+  }
+  .rectangle {
+    padding: 3px 3px;
+  }
+  .skill-detail {
+    margin-bottom: 3vw;
+  }
+  .skill-detail p {
+    font-size: 10px;
+  }
+  .banner-box {
+    margin-top: 400px;
+  }
+}
+@media (max-width: 522px) {
+  .skil_tab, .skil_pc, .skil_tab_02 {
+    display: none;
+  }
+  .skil_sp {
+    display: block;
   }
 }
 @media (max-width: 800px) {
@@ -123,7 +174,7 @@
     width: 350px;
   }
   .header-box {
-    padding-bottom: 15px;
+    display: none;
   }
   .header {
     align-items: end;
@@ -183,6 +234,12 @@
   .name {
     font-size: 10px;
     margin: 5px 0 10px 0;
+  }
+  .nav-title-about {
+    font-size: 45px;
+  }
+  .nav-title-about-02 {
+    font-size: 45px;
   }
   .client {
     margin-top: 50px;
@@ -291,12 +348,6 @@
   .skill-detail img {
     width: 110px;
   }
-  .skil_pc {
-    display: none;
-  }
-  .skil_sp {
-    display: block;
-  }
   .nav-title-box {
     display: block;
     margin-bottom: 50px;
@@ -304,9 +355,6 @@
   .nav-title-skil {
     width: 350px;
     padding: 80px 0 0 0;
-  }
-  .banner-box {
-    margin: 200px 0 0 0;
   }
   .banner-header .maologo {
     width: 100px;
