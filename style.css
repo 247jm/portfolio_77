@@ -75,6 +75,77 @@ a:visited {
   transform: translateY(20%) rotate(-45deg);
 }
 
+/*ハンバーガーメニュー*/
+* {
+  box-sizing: border-box;
+}
+
+.burgermenu {
+  position: fixed;
+  width: 350px;
+  height: 0;
+  left: 80%;
+}
+
+.burger {
+  z-index: 100;
+  --opacity: 1;
+  --rotate: 0;
+  --translate: .5rem;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  margin-top: 0;
+  aspect-ratio: 1;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 0 0 0;
+}
+.burger.is-active {
+  --opacity: 0;
+  --rotate: 135deg;
+  --translate: 0;
+}
+.burger span {
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #000;
+  grid-area: 1/1/-1/-1;
+  transition: opacity 0.3s ease, rotate 0.3s ease, translate 0.3s ease;
+}
+.burger span:nth-child(1) {
+  opacity: var(--opacity);
+}
+.burger span:nth-child(2) {
+  translate: 0 calc(var(--translate) * -1);
+  rotate: var(--rotate);
+}
+.burger span:nth-child(3) {
+  translate: 0 var(--translate);
+  rotate: calc(var(--rotate) * -1);
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.menu.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+.menu .header_right a {
+  font-weight: bold;
+}
+.menu .header_right a img {
+  width: 100px;
+}
+
+/*ここまでハンバーガーメニュー*/
 .fixed-area {
   position: fixed;
   top: 0;
@@ -90,7 +161,7 @@ a:visited {
 }
 
 .banner-header {
-  margin-top: 50px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -414,7 +485,7 @@ footer p {
   text-align: left;
 }
 
-.skil_sp {
+.skil_sp, .skil_tab, .skil_tab_02 {
   display: none;
 }
 
@@ -436,7 +507,7 @@ footer p {
 }
 
 .banner-box {
-  margin: 600px 0 0 0;
+  margin: 270px 0 0 0;
   text-align: center;
 }
 
