@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="media.css">
 	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +21,40 @@
 <body>
 	<div class="container">
 
+		<div class="burgermenu">
+		  <button class="burger" id="burger">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+		  </button>
+		  <nav class="menu" id="menu">
+			  <div class="header_right">
+				  <a href="index.html#profile" class="header-profile"><p>ABOUT</p></a>
+				  <a href="index.html#skill" class="header-profile"><p>SKILL</p></a>
+				  <a href="index.html#works" class="header-profile"><p>WORKS</p></a>
+				  <a href="index.html#contact" class="header-profile"><p>CONTACT</p></a>
+			   </div>
+		  </nav>
+
+		  <script>
+			  const burger = document.querySelector('#burger');
+			  const menu = document.querySelector('#menu');
+
+			  if(burger){
+				  burger.addEventListener('click', () => {
+					  burger.classList.toggle('is-active')
+					  menu.classList.toggle('is-active')
+				  })
+			  }
+		  </script>
+    </div>
+
+
 		<div class="firstview_box">
 			<img src="sozai/header_bgimg.PNG" alt="">
 		</div>
+
+		
 
 		<div class="fixed-area">
 			<div class="header-box">
@@ -38,11 +70,13 @@
 			</div>
 		</div>
 
+		
+
 		<!-- <div class="header_bgimg">
 		  <img src="sozai/header_bgimg.PNG" alt="">
   	</div> -->
 
-		 <!-- <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a> -->
+		 <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
 
 		<div class="profile-box">
 
@@ -116,6 +150,8 @@
 			<div class="skil_bgimg_box">
 				<img class="skil_pc" src="sozai/skil_bgimg.PNG" alt="">
 				<img class="skil_sp" src="sozai/skil_sp_bgimg.PNG" alt="">
+				<img class="skil_tab" src="sozai/skil_tab_bgimg.PNG" alt="">
+				<img class="skil_tab_02" src="sozai/skil_tab_02_bgimg.PNG" alt="">
 			</div>
 
 		</div>
@@ -194,7 +230,7 @@
 
 
 		<footer>
-			<p>@maotaniguchi portfolio site, All Right Reserved.</p>
+			<!-- <p>@maotaniguchi portfolio site, All Right Reserved.</p> -->
 		</footer>
 
 	</div>
