@@ -295,3 +295,16 @@ document.addEventListener("DOMContentLoaded", function () {
   client16List.innerHTML = listHTML16; // 1回だけ innerHTML16 を使って挿入
 
 });
+
+
+//ハンバーガーメニュー
+
+// $(function() {
+//   $('.hamburger').click(function() {
+//     // メニューの開閉状態を切り替える
+//     $('.menu').toggleClass('open');
+
+//     // ハンバーガーボタンのアクティブクラスを切り替えて三本線をバツにする
+//     $(this).toggleClass('active');
+//   });
+// });
