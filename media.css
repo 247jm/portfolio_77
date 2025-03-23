@@ -7,6 +7,9 @@
   .container, .header-box {
     width: 72.7272727273vw;
   }
+  .contact_all {
+    width: 98.4545454545vw;
+  }
   .burgermenu {
     display: none;
   }
@@ -31,7 +34,7 @@
   }
   .banner-box {
     margin-bottom: 75px;
-    margin-top: -400px;
+    margin-top: -300px;
   }
   .logoimg-list, .banner-list {
     -moz-column-gap: 2.2727272727vw;
@@ -108,7 +111,6 @@
     width: 100%;
     -moz-column-gap: 3vw;
          column-gap: 3vw;
-    margin-top: 13vw;
   }
   .rectangle {
     padding: 3px 3px;
@@ -123,50 +125,10 @@
   .skill-detail img {
     width: 13.6363636364vw;
   }
-  .skil_sp, .skil_tab, .skil_tab_02 {
-    display: none;
-  }
-}
-@media (max-width: 800px) and (min-width: 690px) {
-  .skil_sp, .skil_pc, .skil_tab_02 {
-    display: none;
-  }
-  .skil_tab {
-    display: block;
-  }
 }
 @media (max-width: 691px) and (min-width: 523px) {
-  .skil_sp, .skil_pc, .skil_tab {
-    display: none;
-  }
-  .skil_tab_02 {
-    display: block;
-  }
-  .skill-all {
-    width: 100%;
-    -moz-column-gap: 3vw;
-         column-gap: 3vw;
-    margin-top: 10vw;
-  }
-  .rectangle {
-    padding: 3px 3px;
-  }
-  .skill-detail {
-    margin-bottom: 3vw;
-  }
-  .skill-detail p {
-    font-size: 10px;
-  }
   .banner-box {
-    margin-top: 400px;
-  }
-}
-@media (max-width: 522px) {
-  .skil_tab, .skil_pc, .skil_tab_02 {
-    display: none;
-  }
-  .skil_sp {
-    display: block;
+    margin-top: 100px;
   }
 }
 @media (max-width: 800px) {
@@ -175,6 +137,9 @@
   }
   .header-box {
     display: none;
+  }
+  .contact_all {
+    width: 350px;
   }
   .header {
     align-items: end;
@@ -338,12 +303,23 @@
   .web-img-all li:nth-child(2) img {
     width: 270px;
   }
+  .skill-box {
+    margin: 200px 0 0 0;
+  }
   .skill-all {
-    width: 100%;
-    margin-top: 100px;
+    width: 350px;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+  }
+  .rectangle {
+    padding: 3px 3px;
+  }
+  .skill-detail {
+    width: 300px;
+    margin-bottom: 3vw;
   }
   .skill-detail p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .skill-detail img {
     width: 110px;
