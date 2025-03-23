@@ -22,6 +22,11 @@ body {
   font-size: 14px;
 }
 
+.all {
+  width: 100vw;
+  overflow: hidden;
+}
+
 .container {
   text-align: left;
   width: 1083px;
@@ -151,6 +156,7 @@ a:visited {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 400;
 }
 
 .header-box {
@@ -173,7 +179,7 @@ a:visited {
   line-height: 3px;
 }
 .banner-header .maologo {
-  width: 220px;
+  width: 200px;
 }
 .banner-header .header_right {
   display: flex;
@@ -270,7 +276,6 @@ a:visited {
 }
 
 .name-box {
-  width: 1083px;
   margin: 0 auto;
   text-align: left;
 }
@@ -297,9 +302,9 @@ a:visited {
 
 .profilephoto {
   position: absolute;
-  top: 1000px;
+  top: 900px;
   right: 0;
-  z-index: -1;
+  z-index: -10;
 }
 
 .profile-item {
@@ -355,11 +360,78 @@ a:visited {
   width: 100%;
 }
 
+.skill_vw {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c3bea7;
+  margin: -7px auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
 .skil-center {
   overflow-wrap: break-word;
 }
 .skil-center p {
   margin: 0;
+}
+
+.skill-all {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1083px;
+  padding: 0%;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin: 0 auto;
+}
+
+.rectangle {
+  border-radius: 30px;
+  padding: 10px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skill-detail {
+  width: 350px;
+  margin-bottom: 50px;
+}
+.skill-detail p {
+  overflow-wrap: break-word;
+}
+.skill-detail img {
+  width: 150px;
+  margin: 7px 0;
+}
+.skill-detail .skill-title {
+  font-weight: bold;
+}
+.skill-detail .skill-coment {
+  text-align: left;
+}
+
+.skill_under, .skill_top {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill_top {
+  margin-top: -230px;
+}
+
+.skil_sp, .skil_tab, .skil_tab_02 {
+  display: none;
+}
+
+.contact_all {
+  width: 1083px;
+  margin: 0 auto;
 }
 
 .contact-left p {
@@ -396,6 +468,7 @@ footer p {
 }
 
 .nav-title-box {
+  width: 100%;
   display: flex;
   margin-bottom: 100px;
   z-index: 20;
@@ -425,6 +498,8 @@ footer p {
 .nav-title-skil {
   padding: 100px 0 0 0;
   margin: 0 auto;
+  z-index: 200;
+  position: relative;
 }
 
 .nav-subtitle {
@@ -448,47 +523,6 @@ footer p {
   text-align: left;
 }
 
-.skill-all {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1083px;
-  padding: 0%;
-  justify-content: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  margin: 0 auto;
-  margin-top: 320px;
-}
-
-.rectangle {
-  border-radius: 30px;
-  padding: 10px 10px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.skill-detail {
-  width: 350px;
-  margin-bottom: 50px;
-}
-.skill-detail p {
-  overflow-wrap: break-word;
-}
-.skill-detail img {
-  width: 150px;
-  margin: 7px 0;
-}
-.skill-detail .skill-title {
-  font-weight: bold;
-}
-.skill-detail .skill-coment {
-  text-align: left;
-}
-
-.skil_sp, .skil_tab, .skil_tab_02 {
-  display: none;
-}
-
 .tool {
   font-size: 12px;
 }
@@ -507,7 +541,7 @@ footer p {
 }
 
 .banner-box {
-  margin: 270px 0 0 0;
+  margin: 100px 0 0 0;
   text-align: center;
 }
 
