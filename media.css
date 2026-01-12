@@ -25,9 +25,14 @@
   }
   .history-box img {
     width: 59.0909090909vw;
+    top: 450px;
+    right: -80px;
   }
   .profilephoto {
-    top: 72.7272727273vw;
+    top: 50px;
+  }
+  .profile-box {
+    margin-top: -70px;
   }
   .time-skill {
     width: 11.8181818182vw;
@@ -172,16 +177,14 @@
     width: 45px;
   }
   .profile-box {
-    margin-top: 50px;
+    margin-top: 0;
   }
   .history-box img {
     width: 350px;
   }
-  .profilephoto {
-    top: 800px;
-  }
   .profile-img img {
     margin-bottom: 15px;
+    top: 570px;
   }
   .profile-img p {
     font-size: 11px;
@@ -303,8 +306,22 @@
   .web-img-all li:nth-child(2) img {
     width: 270px;
   }
+  .skill_top {
+    display: none;
+  }
+  .skill_sp {
+    display: block;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -230px;
+  }
   .skill-box {
-    margin: 200px 0 0 0;
+    margin: 420px 0 0 0;
+  }
+  .skill_vw {
+    padding: 10px 0 40px 0;
   }
   .skill-all {
     width: 350px;
@@ -316,7 +333,7 @@
   }
   .skill-detail {
     width: 300px;
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
   }
   .skill-detail p {
     font-size: 10px;
@@ -328,9 +345,24 @@
     display: block;
     margin-bottom: 50px;
   }
+  .nav-title-box_skill {
+    display: block;
+    margin-bottom: 0;
+    margin-top: -160px;
+  }
   .nav-title-skil {
     width: 350px;
     padding: 80px 0 0 0;
+  }
+  .banner-box {
+    margin: 0;
+    margin-top: -30px;
+  }
+  .contact {
+    margin: 70px auto;
+  }
+  .contact .copyright {
+    margin: 75px 0 0 0;
   }
   .banner-header .maologo {
     width: 100px;
