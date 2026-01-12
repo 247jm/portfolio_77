@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   // aqリスト動的生成
 const client17List = document.querySelector("#client17-list"); // クラスセレクタに修正
