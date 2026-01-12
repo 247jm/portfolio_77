@@ -90,10 +90,10 @@ a:visited {
   width: 350px;
   height: 0;
   left: 80%;
+  z-index: 1000;
 }
 
 .burger {
-  z-index: 100;
   --opacity: 1;
   --rotate: 0;
   --translate: .5rem;
@@ -115,8 +115,9 @@ a:visited {
 .burger span {
   display: block;
   width: 70%;
-  height: 2px;
+  height: 4px;
   background-color: #000;
+  border-radius: 20px;
   grid-area: 1/1/-1/-1;
   transition: opacity 0.3s ease, rotate 0.3s ease, translate 0.3s ease;
 }
@@ -270,7 +271,7 @@ a:visited {
   margin-top: -150px;
 }
 .profile-box img {
-  width: 650px;
+  width: 600px;
   height: auto;
   margin: 0;
 }
@@ -296,13 +297,14 @@ a:visited {
 }
 
 .profile-img {
+  position: relative;
   padding: 0%;
   margin: 0 auto;
 }
 
 .profilephoto {
   position: absolute;
-  top: 900px;
+  top: 0px;
   right: 0;
   z-index: -10;
 }
@@ -425,7 +427,7 @@ a:visited {
   margin-top: -230px;
 }
 
-.skil_sp, .skil_tab, .skil_tab_02 {
+.skill_sp {
   display: none;
 }
 
@@ -467,7 +469,7 @@ footer p {
   text-align: center;
 }
 
-.nav-title-box {
+.nav-title-box, .nav-title-box_skill {
   width: 100%;
   display: flex;
   margin-bottom: 100px;
@@ -754,9 +756,48 @@ footer p {
      object-fit: contain;
 }
 
-ul#client01-list li, ul#client02-list li, ul#client03-list li, ul#client04-list li, ul#client05-list li, ul#client06-list li, ul#client07-list li, ul#client08-list li, ul#client09-list li, ul#client10-list li, ul#client11-list li, ul#client12-list li, ul#client13-list li, ul#client15-list li, ul#client16-list li {
+ul#client01-list li, ul#client02-list li, ul#client03-list li, ul#client04-list li, ul#client05-list li, ul#client06-list li, ul#client07-list li, ul#client08-list li, ul#client09-list li, ul#client10-list li, ul#client11-list li, ul#client12-list li, ul#client13-list li, ul#client15-list li, ul#client16-list li, ul#client17-list li, ul#client18-list li, ul#client19-list li, ul#client20-list li, ul#client21-list li, ul#client22-list li, ul#client23-list li {
   border: solid 1px #cccccc;
   margin-bottom: 25px;
   width: 250px;
   height: 250px;
+}
+
+.logoimg-list {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.filter-btn {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  margin: 5px;
+}
+
+.filter-btn.is-active {
+  background: #000;
+  color: #fff;
+}
+
+.works-tag {
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+.filter-btn {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.instagram-p {
+  width: 400px;
+  height: auto;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
