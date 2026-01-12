@@ -1,5 +1,131 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+  // aqリスト動的生成
+const client17List = document.querySelector("#client17-list"); // クラスセレクタに修正
+let client17ListNum = 7;
+
+// 初期化しておく
+let listHTML17 = "";
+
+for (var i = 0; i < client17ListNum; i++) {
+  if(i+1 < 3) {
+    listHTML17 += `<li><img class='logoimg' src='sozai/banner/client17_${
+      i + 1
+    }.jpg' alt=''></li>`;
+  } else {
+    listHTML17 += `<li><video controls src='sozai/banner/client17_${
+      i + 1
+    }.mp4'></video></li>`;
+  }
+}
+
+// リストに追加
+client17List.innerHTML = listHTML17; // 1回だけ innerHTML を使って挿入
+
+// LTSリスト動的生成
+const client18List = document.querySelector("#client18-list"); // クラスセレクタに修正
+let client18ListNum = 4;
+
+// 初期化しておく
+let listHTML18 = "";
+
+for (var i = 0; i < client18ListNum; i++) {
+  listHTML18 += `<li><img class='logoimg' src='sozai/banner/client18_${
+    i + 1
+  }.jpg' alt=''></li>`;
+}
+
+// リストに追加
+client18List.innerHTML = listHTML18; // 1回だけ innerHTML18 を使って挿入
+
+
+// アイ工務店リスト動的生成
+const client19List = document.querySelector("#client19-list"); // クラスセレクタに修正
+let client19ListNum = 4;
+
+// 初期化しておく
+let listHTML19 = "";
+
+for (var i = 0; i < client19ListNum; i++) {
+  if(i+1 < 3) {
+    listHTML19 += `<li><img class='logoimg' src='sozai/banner/client19_${
+      i + 1
+    }.jpg' alt=''></li>`;
+  } else {
+    listHTML19 += `<li><video controls src='sozai/banner/client19_${
+      i + 1
+    }.mp4'></video></li>`;
+  }
+}
+
+// リストに追加
+client19List.innerHTML = listHTML19; // 1回だけ innerHTML を使って挿入
+
+
+// ミラタップリスト動的生成
+const client20List = document.querySelector("#client20-list"); // クラスセレクタに修正
+let client20ListNum = 2;
+
+// 初期化しておく
+let listHTML20 = "";
+
+for (var i = 0; i < client20ListNum; i++) {
+  if(i+1 < 0) {
+    listHTML20 += `<li><img class='logoimg' src='sozai/banner/client20_${
+      i + 1
+    }.jpg' alt=''></li>`;
+  } else {
+    listHTML20 += `<li><video controls src='sozai/banner/client20_${
+      i + 1
+    }.mp4'></video></li>`;
+  }
+}
+
+// リストに追加
+client20List.innerHTML = listHTML20; // 1回だけ innerHTML を使って挿入
+
+
+// 相陽建設リスト動的生成
+const client21List = document.querySelector("#client21-list"); // クラスセレクタに修正
+let client21ListNum = 3;
+
+// 初期化しておく
+let listHTML21 = "";
+
+for (var i = 0; i < client21ListNum; i++) {
+  if(i+1 < 0) {
+    listHTML21 += `<li><img class='logoimg' src='sozai/banner/client21_${
+      i + 1
+    }.jpg' alt=''></li>`;
+  } else {
+    listHTML21 += `<li><video controls src='sozai/banner/client21_${
+      i + 1
+    }.mp4'></video></li>`;
+  }
+}
+
+// リストに追加
+client21List.innerHTML = listHTML21; // 1回だけ innerHTML を使って挿入
+
+
+// 岡田リスト動的生成
+const client22List = document.querySelector("#client22-list"); // クラスセレクタに修正
+let client22ListNum = 1;
+
+// 初期化しておく
+let listHTML22 = "";
+
+for (var i = 0; i < client22ListNum; i++) {
+  listHTML22 += `<li><img class='logoimg' src='sozai/banner/client22_${
+    i + 1
+  }.jpg' alt=''></li>`;
+}
+
+// リストに追加
+client22List.innerHTML = listHTML22; // 1回だけ innerHTML22 を使って挿入
+
+
+
   // 再春館製薬リスト動的生成
   const client01List = document.querySelector("#client01-list"); // クラスセレクタに修正
   let client01ListNum = 8;
@@ -294,6 +420,40 @@ document.addEventListener("DOMContentLoaded", function () {
   // リストに追加
   client16List.innerHTML = listHTML16; // 1回だけ innerHTML16 を使って挿入
 
+
+
+
+
+
+});
+
+
+ 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".logo-item");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+
+      // active切り替え
+      buttons.forEach(b => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+
+      items.forEach(item => {
+        const category = item.dataset.category;
+
+        if (filter === "all" || category.includes(filter)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
 });
 
 
@@ -308,3 +468,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //     $(this).toggleClass('active');
 //   });
 // });
+
+
