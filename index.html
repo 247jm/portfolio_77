@@ -83,7 +83,7 @@
 
 			<div class="name-box" id="profile" >
 				<div class="nav-title-box">
-				 <p class="nav-title-about">ABOUT</p><br>
+				 <p class="nav-title-about">ABOUT</p>
 				 <p class="nav-subtitle">わたしのコト</p>
 			  </div>
 
@@ -91,11 +91,14 @@
 					<div class="history-box">
 						<img class="profilephoto" src="sozai/profile.jpg"alt="">
 						<p class="about-coment">
-							1991年生まれ。<br>和歌山県高野山出身、大阪府在住。<br>
-							現在は2歳の子どもを育てながら、<br>
-							デザインのスキルを上げるため、すきま時間に毎日勉強中。<br><br>
-							「好きなことを仕事にする！」<br>
-							絶対にあきらめない33歳ママの挑戦。
+							1991年生まれ。<br>和歌山県高野山出身、大阪府在住。<br><br>
+							フリーランスとして約3年間、広告バナー制作やWebデザインに携わった後<br>
+							現在は3歳の子どもを育てながら、<br>
+							工務店・住宅業界に特化したWeb集客を総合支援する会社で<br>
+							SNS・Web広告を軸に、<br>静止画・動画の投稿デザインやバナー制作など<br>
+							コンテンツの企画・制作から運用、進行管理までを担当。<br><br>
+							“伝わるデザイン”と“成果につながる表現”を<br>大切にしています。
+							
 						</p>
 					</div>
 				</div>
@@ -106,14 +109,15 @@
 
 		<div class="skill-box" id="skill">
 			<div class="nav-title-skil">
-			  <div class="nav-title-box">
-				  <p class="nav-title-about-02">SKILL</p><br>
+			  <div class="nav-title-box_skill">
+				  <p class="nav-title-about-02">SKILL</p>
 				  <p class="nav-subtitle">とくいなコト</p>
 			  </div>
 			</div>
 			<!-- <p class="nav-title-skill">skill</p> -->
 
 			<img class="skill_top" src="sozai/skil_bgimg.png" alt="">
+			<img class="skill_sp" src="sozai/skil_sp_bgimg.png" alt="">
 			<div class="skill_vw">
 			 <div class="skill-all">
 				<div class="skill-detail">
@@ -165,31 +169,52 @@
 		<div class="banner-box" id="works">
 			<div class="nav-title-skil">
 			  <div class="nav-title-box">
-				  <p class="nav-title-about">WORKS</p><br>
+				  <p class="nav-title-about">WORKS</p>
 				  <p class="nav-subtitle">つくったモノ</p>
+					
 			  </div>
+				<div class="works-tag">
+					<button class="filter-btn is-active" data-filter="all">ALL</button>
+					<button class="filter-btn" data-filter="web">WEB SITE</button>
+					<button class="filter-btn" data-filter="banner">BANNER</button>
+					<button class="filter-btn" data-filter="sns">SNS MARKETING</button>
+					<button class="filter-btn" data-filter="movie">MOVIE</button>
+					<button class="filter-btn" data-filter="logo">LOGO DESIGN</button>
+					<button class="filter-btn" data-filter="ui">UI DESIGN</button>
+					<button class="filter-btn" data-filter="illust">ILLUST</button>
+				</div>
+				
 			</div>
 			<!-- <p class="nav-title-works">works</p> -->
 			<div class="logoimg-box">
 				<ul class="logoimg-list">
-					<li><a href="banner.html#client000"><img class="logoimg" src="sozai/logo/logo_000_addalittle.jpg" alt=""></a></li>
-					<li><a href="banner.html#client00"><img class="logoimg" src="sozai/logo/logo_00_otaniseikaten.jpg" alt=""></a></li>
-					<li><a href="banner.html#client01"><img class="logoimg" src="sozai/logo/logo_01_saishunkan.jpg" alt=""></a></li>
-					<li><a href="banner.html#client02"><img class="logoimg" src="sozai/logo/logo_02_ORBIS.jpg" alt=""></a></li>
-					<li><a href="banner.html#client03"><img class="logoimg" src="sozai/logo/logo_03_Oh_my_teeth.jpg" alt=""></a></li>
-					<li><a href="banner.html#client04"><img class="logoimg" src="sozai/logo/logo_04_LAVA.jpg" alt=""></a></li>
-					<li><a href="banner.html#client05"><img class="logoimg" src="sozai/logo/logo_05_ABC.jpg" alt=""></a></li>
-					<li><a href="banner.html#client06"><img class="logoimg" src="sozai/logo/logo_06_HLCA.jpg" alt=""></a></li>
-					<li><a href="banner.html#client07"><img class="logoimg" src="sozai/logo/logo_07_TRY.jpg" alt=""></a></li>
-					<li><a href="banner.html#client08"><img class="logoimg" src="sozai/logo/logo_08_Kredo.jpg" alt=""></a></li>
-					<li><a href="banner.html#client09"><img class="logoimg" src="sozai/logo/logo_09_Locca.jpg" alt=""></a></li>
-					<li><a href="banner.html#client10"><img class="logoimg" src="sozai/logo/logo_10_EI.jpg" alt=""></a></li>
-					<li><a href="banner.html#client11"><img class="logoimg" src="sozai/logo/logo_11_koloha.jpg" alt=""></a></li>
+					
+					<li class="logo-item" data-category="sns movie"><a href="banner.html#client17"><img class="logoimg" src="sozai/logo/logo_17_aqhaus.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="sns"><a href="banner.html#client18"><img class="logoimg" src="sozai/logo/logo_18_lts.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="sns movie"><a href="banner.html#client19"><img class="logoimg" src="sozai/logo/logo_19_ai.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="sns movie"><a href="banner.html#client20"><img class="logoimg" src="sozai/logo/logo_20_asolie.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="sns movie"><a href="banner.html#client21"><img class="logoimg" src="sozai/logo/logo_21_soleliving.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="sns banner"><a href="banner.html#client22"><img class="logoimg" src="sozai/logo/logo_22_glabo.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="web logo illust"><a href="banner.html#client000"><img class="logoimg" src="sozai/logo/logo_000_addalittle.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="web logo illust"><a href="banner.html#client00"><img class="logoimg" src="sozai/logo/logo_00_otaniseikaten.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client01"><img class="logoimg" src="sozai/logo/logo_01_saishunkan.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client02"><img class="logoimg" src="sozai/logo/logo_02_ORBIS.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client03"><img class="logoimg" src="sozai/logo/logo_03_Oh_my_teeth.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client04"><img class="logoimg" src="sozai/logo/logo_04_LAVA.jpg" alt=""></a></li>
+
+					<li class="logo-item" data-category="banner"><a href="banner.html#client05"><img class="logoimg" src="sozai/logo/logo_05_ABC.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client06"><img class="logoimg" src="sozai/logo/logo_06_HLCA.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client07"><img class="logoimg" src="sozai/logo/logo_07_TRY.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client08"><img class="logoimg" src="sozai/logo/logo_08_Kredo.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner movie"><a href="banner.html#client09"><img class="logoimg" src="sozai/logo/logo_09_Locca.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client10"><img class="logoimg" src="sozai/logo/logo_10_EI.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="banner"><a href="banner.html#client11"><img class="logoimg" src="sozai/logo/logo_11_koloha.jpg" alt=""></a></li>
 					<!-- <li><a href="banner.html#client12"><img class="logoimg" src="sozai/logo/logo_12_celbest.jpg" alt=""></a></li> -->
 					<!-- <li><a href="banner.html#client13"><img class="logoimg" src="sozai/logo/logo_13_GOfund.jpg" alt=""></a></li> -->
-					<li><a href="banner.html#client14"><img class="logoimg" src="sozai/logo/logo_14_minchare.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="ui"><a href="banner.html#client14"><img class="logoimg" src="sozai/logo/logo_14_minchare.jpg" alt=""></a></li>
 					<!-- <li><a href="banner.html#client15"><img class="logoimg" src="sozai/logo/logo_15_shishabucks.jpg" alt=""></a></li> -->
-					<li><a href="banner.html#client16"><img class="logoimg" src="sozai/illust/skateboard.jpg" alt=""></a></li>
+					<li class="logo-item" data-category="illust"><a href="banner.html#client16"><img class="logoimg" src="sozai/illust/skateboard.jpg" alt=""></a></li>
+					
 				</ul>
 			</div>
 		</div>
@@ -198,7 +223,7 @@
 			<div class="contact_all">
 			<div class="nav-title-skil">
 			  <div class="nav-title-box">
-				  <p class="nav-title-about-02">CONTACT</p><br>
+				  <p class="nav-title-about-02">CONTACT</p>
 				  <p class="nav-subtitle">おといあわせ</p>
 			  </div>
 			</div>
