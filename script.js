@@ -1,8 +1,3 @@
-const pass = prompt("パスワードを入力してください");
-
-if (pass !== "mao.t1124") {
-  document.body.innerHTML = "Access Denied";
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   // aqリスト動的生成
