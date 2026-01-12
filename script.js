@@ -1,9 +1,3 @@
-<script>
-  const pass = prompt("パスワードを入力してください");
-  if (pass !== "mao_t_1124") {
-    document.body.innerHTML = "Access Denied";
-  }
-</script>
 
 document.addEventListener("DOMContentLoaded", function () {
   // aqリスト動的生成
