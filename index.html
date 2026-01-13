@@ -19,12 +19,18 @@
 </head>
 
 <body>
-	<script>
-     const pass = prompt("パスワードを入力してください");
-     if (pass !== "portfolio123") {
-       document.body.innerHTML = "Access Denied";
-     }
-    </script>
+ <script>
+  // すでに認証済みかチェック
+  if (!sessionStorage.getItem("auth")) {
+    const pass = prompt("パスワードを入力してください");
+
+    if (pass === "portfolio.mt1124") {
+      sessionStorage.setItem("auth", "true");
+    } else {
+      document.body.innerHTML = "Access Denied";
+    }
+  }
+ </script>
 	
 	<div class="all">
 	<div class="container">
